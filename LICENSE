@@ -1,0 +1,39 @@
+# 1ofN — License Notice
+
+Except where a file states otherwise, the current non-software materials in this repository are licensed under:
+
+**Creative Commons Attribution 4.0 International (CC BY 4.0)**
+
+License reference:
+https://creativecommons.org/licenses/by/4.0/
+
+## Covered paths
+
+- `README.md`
+- `README.vi.md`
+- `METHOD.md`
+- `QUICKSTART.md`
+- `PROMPT.md`
+- `docs/**/*.md`
+- `examples/**/*.md`
+- `evals/**/*.md`
+- `schema/decision-packet.yaml`
+
+## Preferred attribution
+
+**1ofN by kiencuongnguyen88**
+
+When reasonably possible, attribution should also:
+- reference the canonical 1ofN repository;
+- reference CC BY 4.0;
+- indicate if the material was modified or translated.
+
+## Not automatically covered
+
+This notice does not automatically license:
+- third-party material identified as having separate terms;
+- trademarks, logos, brand identity, or compatibility claims;
+- personal-name, likeness, privacy, publicity, or endorsement rights;
+- future software source code or binaries unless separately marked.
+
+Future software is intentionally outside this CC BY 4.0 scope and should use a separate software-specific license when software exists.

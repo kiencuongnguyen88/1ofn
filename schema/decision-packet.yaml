@@ -1,0 +1,55 @@
+schema: 1ofn-decision-packet/v0.1
+
+method:
+  name: 1ofN
+  meaning: "1 among N plausible options"
+  forced_single_winner: false
+
+decision:
+  question: ""
+  desired_outcome: ""
+  constraints: []
+  horizon: ""
+
+claims:
+  facts: []
+  assumptions: []
+  unknowns: []
+
+candidates:
+  - id: option_a
+    label: ""
+    origin: GIVEN  # GIVEN | EVIDENCE_DERIVED | NEW_ALTERNATIVE | HYBRID | DEFERRED_TEST
+    supporting_evidence: []
+    contrary_evidence: []
+    strongest_assumption: ""
+    failure_modes: []
+    simpler_alternative: ""
+    missing_evidence: []
+    counterfactual_loss_if_removed: ""
+    absorbed_by: []
+    verdict: KEEP  # KEEP | MERGE | PARK | REMOVE | BLOCKED
+    verdict_reason: ""
+
+final_decision:
+  state: DECIDE  # DECIDE | PARK | BLOCKED
+  selected_path: ""
+  rationale: []
+  merged_items: []
+  parked_items: []
+  removed_items: []
+  blocked_items: []
+
+uncertainty:
+  residuals: []
+  reversal_conditions: []
+  confidence_basis: ""
+
+next_action:
+  action: ""
+  evidence_to_collect: []
+  reopen_when: []
+
+run_control:
+  targeted_backloops_used: 0
+  stop_reason: ""
