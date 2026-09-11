@@ -45,3 +45,9 @@ The method makes reasoning inspectable; it does not transfer responsibility for 
 ## 10. Not every decision deserves 1ofN
 
 For obvious, reversible, low-cost choices, use a simpler process and act.
+
+## 11. Selection is not assembly
+
+`1ofN` is designed for alternatives that materially compete for a decision. It should not be stretched into a rule that every problem with N parts must collapse to one surviving part.
+
+Some problems are composition or coverage problems: several components may need to coexist because they serve different required roles. Solve that larger assembly problem on its own terms. `1ofN` can still be used inside it when two or more candidate components, architectures, sequences, or implementations materially compete for the same role.

@@ -102,6 +102,12 @@ Các case canonical hiện giữ bằng tiếng Anh:
 - [Chọn cách học một kỹ năng mới](examples/02-learning-path.md)
 - [Chọn hướng tiếp theo cho một sản phẩm nhỏ](examples/03-product-direction.md)
 
+## Theo dõi kết quả sau quyết định
+
+Khi một quyết định đã tạo ra kết quả thực tế có thể quan sát, có thể dùng [evals/outcome-followup.md](evals/outcome-followup.md) để giữ lại cơ sở quyết định ban đầu, ghi nhận điều thực sự xảy ra và rút ra evidence cho các run sau.
+
+Đây là eval tùy chọn, không phải stage thứ sáu, không dùng kết quả sau này để viết lại quyết định ban đầu, và không thay đổi phương pháp năm stage.
+
 ## Ngôn ngữ và đồng bộ
 
 English là **canonical language**. Tiếng Việt là localization hạng nhất đầu tiên.
@@ -122,4 +128,4 @@ Người dùng không cần biết DIAMOND OS hay BBR để sử dụng 1ofN. Li
 
 ## Trạng thái
 
-`v0.1.2 final pre-public candidate`
+`v0.1.2 public release`

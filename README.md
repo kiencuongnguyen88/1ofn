@@ -113,6 +113,12 @@ Do not judge a run by length or by how intelligent the prose sounds. Use:
 
 to test whether the run actually improves decision quality.
 
+After a decision has produced observable real-world results, you may also use:
+
+[evals/outcome-followup.md](evals/outcome-followup.md)
+
+to preserve the original decision basis, record what actually happened, and identify evidence for future runs. This follow-up is optional: it is not a sixth stage, it does not retroactively rewrite the original decision, and it does not change the five-stage method.
+
 ## What 1ofN is not
 
 It is not:
@@ -145,6 +151,6 @@ The public method is independent of the internal system in which its ancestor wa
 
 ## Status
 
-`v0.1.2 final pre-public candidate`
+`v0.1.2 public release`
 
 Method-first. Documentation-first. No app, package, model, or service is required.
