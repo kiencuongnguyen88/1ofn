@@ -33,16 +33,26 @@ METHOD
 2. EXPAND
 - List the given options.
 - Add missing alternatives, hybrids, sequencing options, test-first options, or deferral when genuinely relevant.
-- Give every candidate an origin.
+- Construct one explicit FULL_BASELINE for every material run: the complete-enough route that preserves all material outcome, constraints, protections, dependencies, continuity, and future-option value required by the frame.
+- Do not assume CURRENT / INCUMBENT is the full baseline. If an existing candidate is proven to satisfy the whole frame, mark it as FULL_BASELINE instead of inventing a duplicate.
+- FULL_BASELINE does not mean maximal complexity.
+- Give every candidate an origin. Use SYNTHESIZED_FULL_BASELINE when the baseline is newly constructed.
 
 3. CHALLENGE
-For every candidate:
+For every candidate, including FULL_BASELINE:
 - supporting evidence;
 - contrary evidence;
 - strongest assumption;
 - failure mode;
 - simpler alternative;
 - missing evidence that could change the verdict.
+
+For any challenger that removes, skips, reorders, shadows, or replaces material baseline force:
+- material net advantage over FULL_BASELINE;
+- material regression, if any;
+- value-retention / recovery path for anything removed.
+
+When cost matters, compare expected total cost of reaching a valid outcome across the whole loop, not first-pass cost alone. Include repair, retry, escalation, human attention, rework, switching, recovery, downstream failure, or opportunity cost when material. Use qualitative comparison when calibration is weak; do not invent precise probabilities.
 
 4. DISTILL
 Give every candidate exactly one verdict:
@@ -56,7 +66,8 @@ Do not let any candidate disappear without a verdict.
 5. DECIDE
 Return:
 - selected path, or PARK/BLOCKED if evidence is insufficient;
-- why it survived;
+- explicit FULL_BASELINE reference;
+- why the selected path survived against the relevant baseline/challengers;
 - what was merged, parked, removed, or blocked;
 - key evidence;
 - remaining uncertainty;
@@ -67,6 +78,9 @@ BOUNDARIES
 - Do not invent evidence.
 - Do not hide uncertainty behind numerical scores unless the numbers are justified.
 - Do not force a winner when a material evidence gap remains.
+- Do not treat CURRENT / INCUMBENT as FULL_BASELINE without checking completeness against the frame.
+- Do not treat novelty, brevity, elegance, or cheapest first-pass cost as proof of superiority.
+- If the decision maker chooses differently from the analytical result, preserve both records instead of rewriting the analysis.
 - Use at most two targeted backloops if a new material gap appears.
 - Stop when further analysis no longer changes the decision.
 

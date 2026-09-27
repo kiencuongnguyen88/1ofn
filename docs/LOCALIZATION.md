@@ -4,7 +4,7 @@
 
 English is the canonical semantic source for the public 1ofN method.
 
-Canonical surfaces in v0.1.2:
+Canonical surfaces in v0.1.3:
 
 - `README.md`
 - `METHOD.md`
@@ -18,6 +18,8 @@ Canonical surfaces in v0.1.2:
 - `docs/LIVING_REPO_GROWTH_POLICY.md`
 - `docs/ROADMAP.md`
 - `docs/ARCHITECTURE.md`
+- `docs/REPLACEMENT_DECISIONS.md`
+- `evals/full-baseline-regression.md`
 
 ## First-class localization
 
@@ -50,6 +52,8 @@ Every localization must preserve:
 - `KEEP | MERGE | PARK | REMOVE | BLOCKED`;
 - the counterfactual removal test;
 - the guard that 1ofN does not force one winner;
+- material runs must carry an explicit FULL_BASELINE reference before DISTILL;
+- CURRENT / INCUMBENT is not automatically FULL_BASELINE;
 - evidence / assumption / uncertainty separation;
 - bounded backloops and stop conditions.
 

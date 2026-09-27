@@ -1,9 +1,10 @@
-schema: 1ofn-decision-packet/v0.1
+schema: 1ofn-decision-packet/v0.2
 
 method:
   name: 1ofN
   meaning: "1 among N plausible options"
   forced_single_winner: false
+  full_baseline_required_for_material_run: true
 
 decision:
   question: ""
@@ -16,24 +17,40 @@ claims:
   assumptions: []
   unknowns: []
 
+full_baseline:
+  candidate_id: ""
+  construction_basis: []
+  reused_existing_candidate: false
+  completeness_basis: []
+
 candidates:
   - id: option_a
     label: ""
-    origin: GIVEN  # GIVEN | EVIDENCE_DERIVED | NEW_ALTERNATIVE | HYBRID | DEFERRED_TEST
+    origin: GIVEN  # GIVEN | EVIDENCE_DERIVED | NEW_ALTERNATIVE | HYBRID | DEFERRED_TEST | SYNTHESIZED_FULL_BASELINE
+    roles: []  # CURRENT_INCUMBENT | FULL_BASELINE | CHALLENGER
     supporting_evidence: []
     contrary_evidence: []
     strongest_assumption: ""
     failure_modes: []
     simpler_alternative: ""
     missing_evidence: []
+    material_net_advantage_over_full_baseline: []
+    material_regressions_vs_full_baseline: []
+    expected_valid_outcome_basis: []
+    expected_total_cost_factors: []
     counterfactual_loss_if_removed: ""
     absorbed_by: []
+    value_retention_notes: []
+    recovery_or_rollback: ""
     verdict: KEEP  # KEEP | MERGE | PARK | REMOVE | BLOCKED
     verdict_reason: ""
 
 final_decision:
   state: DECIDE  # DECIDE | PARK | BLOCKED
   selected_path: ""
+  analytical_result: ""
+  decision_maker_choice_if_different: ""
+  override_tradeoff_if_any: ""
   rationale: []
   merged_items: []
   parked_items: []

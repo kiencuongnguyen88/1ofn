@@ -33,16 +33,26 @@ METHOD
 2. EXPAND
 - Liệt kê các option đã có.
 - Thêm alternative bị bỏ sót, hybrid, sequencing, test-first hoặc deferral khi thực sự liên quan.
-- Gán origin cho mỗi candidate.
+- Với mọi material run, dựng một FULL_BASELINE rõ ràng: đường đi đủ đầy để giữ toàn bộ outcome, constraint, protection, dependency, continuity và future-option value material mà frame yêu cầu.
+- Không mặc định CURRENT / INCUMBENT là full baseline. Nếu một candidate hiện hữu được chứng minh đã đáp ứng toàn bộ frame, gắn vai trò FULL_BASELINE cho chính candidate đó thay vì tạo bản sao hình thức.
+- FULL_BASELINE không có nghĩa maximal complexity.
+- Gán origin cho mỗi candidate. Dùng SYNTHESIZED_FULL_BASELINE khi baseline được dựng mới.
 
 3. CHALLENGE
-Với từng candidate, trả:
+Với từng candidate, kể cả FULL_BASELINE, trả:
 - supporting evidence;
 - contrary evidence;
 - strongest assumption;
 - failure mode;
 - simpler alternative;
 - missing evidence có thể đổi verdict.
+
+Với challenger làm mất, bỏ qua, đổi thứ tự, che khuất hoặc thay thế material force của baseline, kiểm tra:
+- material net advantage so với FULL_BASELINE;
+- material regression nếu có;
+- value-retention / recovery path cho phần bị bỏ.
+
+Khi cost có ý nghĩa quyết định, so expected total cost để đi tới valid outcome trên toàn vòng, không chỉ chi phí lượt đầu. Khi material, tính cả repair, retry, escalation, Human attention, rework, switching, recovery, downstream failure và opportunity cost. Nếu calibration yếu, dùng so sánh định tính; không bịa probability chính xác.
 
 4. DISTILL
 Mỗi candidate nhận đúng một verdict:
@@ -56,7 +66,8 @@ Không để candidate nào biến mất mà không có verdict.
 5. DECIDE
 Trả:
 - selected path, hoặc PARK/BLOCKED nếu evidence chưa đủ;
-- vì sao nó sống sót;
+- explicit FULL_BASELINE reference;
+- vì sao selected path sống sót so với baseline/challenger liên quan;
 - cái gì đã merge, park, remove hoặc block;
 - key evidence;
 - uncertainty còn lại;
@@ -67,6 +78,9 @@ RANH GIỚI
 - Không bịa evidence.
 - Không che uncertainty bằng numerical score nếu con số không có cơ sở.
 - Không ép một winner khi còn material evidence gap.
+- Không mặc định CURRENT / INCUMBENT là FULL_BASELINE nếu chưa kiểm tra độ đầy đủ so với frame.
+- Không coi novelty, brevity, elegance hoặc cheapest first-pass cost là bằng chứng phương án tốt hơn.
+- Nếu người quyết định chọn khác analytical result, giữ riêng hai record thay vì sửa ngược phân tích.
 - Tối đa hai targeted backloop nếu xuất hiện gap material mới.
 - Dừng khi phân tích thêm không còn đổi decision.
 

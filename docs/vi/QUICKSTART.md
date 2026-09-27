@@ -34,6 +34,10 @@ Viết lại câu hỏi thành đúng decision thật.
 ### 2. EXPAND
 Thêm alternative bị bỏ sót, hybrid, sequencing, “test first”, hoặc “do nothing for now” khi thực sự liên quan.
 
+Với mọi material run, dựng một `FULL_BASELINE` rõ ràng: đường đi đủ đầy cho frame hiện tại. Không mặc định phương án đang dùng đã full. Nếu một option hiện hữu thật sự bao phủ toàn bộ frame, gắn nó làm baseline sau khi kiểm tra thay vì tạo duplicate.
+
+`FULL_BASELINE` là đủ đầy cho material scope, không phải maximal complexity.
+
 ### 3. CHALLENGE
 Với mỗi candidate, tìm:
 
@@ -41,7 +45,8 @@ Với mỗi candidate, tìm:
 - contrary evidence;
 - strongest assumption;
 - failure mode;
-- simpler alternative.
+- simpler alternative;
+- nếu candidate thách thức full baseline, material net advantage nào được tạo ra và material regression nào có nguy cơ xuất hiện.
 
 ### 4. DISTILL
 Gán cho mọi candidate:

@@ -1,4 +1,4 @@
-# 1ofN Evaluation Rubric v0.1
+# 1ofN Evaluation Rubric v0.2
 
 The purpose of this rubric is to test whether a run improved the decision, not whether the response sounded sophisticated.
 
@@ -48,3 +48,12 @@ Any of these should trigger repair even if the total score is high:
 - critical uncertainty hidden;
 - decision forced despite a material blocker;
 - repeated analysis that does not change the decision.
+- material run reaches DISTILL without constructing or explicitly proving one FULL_BASELINE reference;
+- current/incumbent is treated as FULL_BASELINE merely because it is current;
+- challenger replaces material baseline force without addressing material net advantage and material regression;
+- cheapest first-pass cost, novelty, brevity, or elegance is treated as sufficient replacement proof;
+- material replacement hides value-retention, recovery, or rollback loss that could change the decision.
+
+## Full-baseline regression
+
+Use [full-baseline-regression.md](full-baseline-regression.md) to test the critical case where every supplied option is partial. A run that scores well elsewhere still requires repair if it fails this regression.

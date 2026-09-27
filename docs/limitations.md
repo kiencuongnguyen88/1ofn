@@ -51,3 +51,22 @@ For obvious, reversible, low-cost choices, use a simpler process and act.
 `1ofN` is designed for alternatives that materially compete for a decision. It should not be stretched into a rule that every problem with N parts must collapse to one surviving part.
 
 Some problems are composition or coverage problems: several components may need to coexist because they serve different required roles. Solve that larger assembly problem on its own terms. `1ofN` can still be used inside it when two or more candidate components, architectures, sequences, or implementations materially compete for the same role.
+
+
+## 12. The current option is not automatically the full baseline
+
+A working incumbent may still be partial, historical, or shaped by earlier constraints. Material runs must construct or explicitly prove a `FULL_BASELINE` before narrowing the field.
+
+The opposite mistake also matters: `FULL_BASELINE` does not mean maximal complexity. Requirements that are not material to the current frame should not survive merely because the baseline is called “full.”
+
+## 13. Newer, shorter, or cheaper-first is not automatically better
+
+Novelty, brevity, elegance, familiarity, and low first-pass cost can all be useful properties, but none proves that a challenger should replace material baseline force.
+
+Compare material net advantage, material regression, and — when relevant — the expected total cost of reaching a valid outcome across the whole loop.
+
+## 14. The chosen action and the analytical result can differ
+
+A decision maker remains free to choose a different action from the path that survives the 1ofN analysis.
+
+If that happens, preserve the analytical result, chosen action, and accepted trade-off separately. Do not rewrite the decision record to claim the chosen option analytically dominated when the evidence did not show that.

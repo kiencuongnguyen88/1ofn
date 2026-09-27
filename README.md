@@ -33,6 +33,16 @@ Do not use it for trivial, obvious, low-cost, or easily reversible choices.
 4. **DISTILL** — assign every candidate a visible state: `KEEP | MERGE | PARK | REMOVE | BLOCKED`.
 5. **DECIDE** — commit to the strongest surviving path, or state clearly why commitment is premature.
 
+## Full-baseline guard
+
+For a material run, `EXPAND` must not assume the visible options already contain a complete route. 1ofN creates one explicit **FULL_BASELINE** reference before narrowing the field.
+
+The current/incumbent option is not automatically full. If it truly covers the whole decision frame, it can be marked as the baseline after that completeness is checked. `FULL_BASELINE` means complete enough for the material scope, **not maximal complexity**.
+
+A challenger that removes material baseline force should displace it only when the comparison supports **material net advantage** without **material regression**. The baseline is still challengeable; it is a reference, not a forced winner.
+
+See [docs/REPLACEMENT_DECISIONS.md](docs/REPLACEMENT_DECISIONS.md).
+
 ## Stable core, living method
 
 `1ofN` is designed to stay easy to recognize even as its execution becomes much stronger.
@@ -113,6 +123,8 @@ Do not judge a run by length or by how intelligent the prose sounds. Use:
 
 to test whether the run actually improves decision quality.
 
+A focused regression case for incomplete option sets is available at [evals/full-baseline-regression.md](evals/full-baseline-regression.md).
+
 After a decision has produced observable real-world results, you may also use:
 
 [evals/outcome-followup.md](evals/outcome-followup.md)
@@ -151,6 +163,6 @@ The public method is independent of the internal system in which its ancestor wa
 
 ## Status
 
-`v0.1.2 public release`
+`v0.1.3 public release`
 
 Method-first. Documentation-first. No app, package, model, or service is required.

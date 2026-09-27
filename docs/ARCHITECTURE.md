@@ -34,6 +34,7 @@ Question:
 Roles:
 
 - **REASONING DEPTH** — stronger processing inside the fixed five stages;
+- **FULL-BASELINE CONSTRUCTION / REPLACEMENT PROOF** — explicitly build or prove a complete-enough reference option in material runs, then test challengers for material net advantage and material regression before they displace baseline force;
 - **PRACTICE / REALITY EXPERIENCE** — accumulated real cases, failures, reversals, and later outcomes;
 - **EVALUATION / PROOF** — evidence that a newer execution is actually better;
 - **LEARNING / EVOLUTION** — safely convert proven lessons into versioned improvements.

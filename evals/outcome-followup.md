@@ -26,6 +26,8 @@ Before evaluating the outcome, copy or reference what the original run actually 
 
 - decision and desired outcome;
 - selected path;
+- analytical result and the decision maker's actual chosen action if they differed;
+- explicit full-baseline reference used in the original run;
 - evidence basis;
 - important assumptions and unknowns;
 - residual uncertainty;
@@ -59,6 +61,8 @@ Evaluate the original run without outcome hindsight:
 - Did every candidate receive a traceable verdict?
 - Were uncertainty and reversal conditions visible?
 - Would the same evidence available at the time still justify the decision?
+
+If the decision maker intentionally overrode the analytical result, evaluate the original analysis and the override as separate facts. A later good or bad outcome must not be used to relabel the original challenger as analytically superior or inferior after the fact.
 
 Then evaluate the later outcome separately.
 

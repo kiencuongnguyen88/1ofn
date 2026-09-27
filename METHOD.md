@@ -119,6 +119,18 @@ Ask:
 - Are “do nothing,” “delay,” “test first,” or “A then B” valid candidates?
 - Does a hidden dependency create another option?
 
+### Required full baseline
+
+Every material 1ofN run must carry one explicit `FULL_BASELINE` reference before `DISTILL`.
+
+Do not assume the visible options contain a complete route. During `EXPAND`, construct a complete-enough reference candidate from the decision frame:
+
+> If the currently visible options did not constrain us, what route would preserve all material outcome, constraint, protection, dependency, continuity, and future-option value required by this decision?
+
+`FULL_BASELINE != MAXIMAL_COMPLEXITY`. The baseline keeps material force required by the current frame; it does not collect every imaginable feature.
+
+`CURRENT / INCUMBENT != FULL_BASELINE` by default. If a given or current candidate is explicitly shown to satisfy the whole frame, that same candidate may carry the `FULL_BASELINE` role instead of creating a duplicate.
+
 Each candidate gets an origin:
 
 - `GIVEN`
@@ -126,8 +138,9 @@ Each candidate gets an origin:
 - `NEW_ALTERNATIVE`
 - `HYBRID`
 - `DEFERRED_TEST`
+- `SYNTHESIZED_FULL_BASELINE`
 
-**Output:** a candidate map. Nothing is added or removed silently.
+**Output:** a candidate map with one explicit full-baseline reference. Nothing is added or removed silently.
 
 ---
 
@@ -145,9 +158,26 @@ For each candidate ask:
 - Is there a simpler option that preserves the same value?
 - Is the candidate attractive because it is useful, or because it sounds sophisticated?
 
+### Baseline / challenger check
+
+Challenge the full baseline too. It is a reference, not an automatic winner.
+
+For any challenger that removes, skips, reorders, shadows, or replaces material baseline force, ask:
+
+- What material net advantage does the challenger create?
+- What material capability, protection, evidence quality, continuity, recovery, or future option regresses?
+- Can the challenger absorb that loss another way?
+- Is the challenger attractive because it is newer, shorter, cheaper on the first pass, or more elegant rather than because it is better for the actual decision?
+
+A challenger should displace material baseline force only when the comparison supports both **material net advantage** and **no material regression**.
+
+When cost is decision-relevant, compare the expected path to a valid outcome across the whole loop, not first-pass cost alone. Relevant factors may include gap repair, retry, escalation, decision-maker attention, rework, switching, assurance, recovery, downstream omission/failure, and opportunity cost.
+
+If calibration is weak, use qualitative dominance. Do not invent probabilities or weighted scores.
+
 A candidate that has not faced contrary evidence is not ready for a terminal verdict.
 
-**Output:** supporting evidence, contradictions, failure modes, and missing evidence.
+**Output:** supporting evidence, contradictions, failure modes, missing evidence, and the baseline/challenger comparison where material.
 
 ---
 
@@ -180,7 +210,17 @@ Ask for every candidate:
 
 If nothing material is lost, the candidate does not survive merely because it is “also good.”
 
-**Output:** a complete verdict ledger.
+When a candidate would replace, supersede, simplify away, or merge away material baseline/incumbent force, also check:
+
+- which upstream or downstream dependency changes;
+- which durable capability or protection must remain;
+- continuity and reconstructability;
+- switching, rework, assurance, recovery, or rollback needs when material;
+- new failure modes and blast radius.
+
+The goal is not to preserve an old implementation for its own sake. The goal is to preserve material value unless evidence supports a better replacement.
+
+**Output:** a complete verdict ledger, including material value-retention effects where replacement is involved.
 
 ---
 
@@ -191,12 +231,15 @@ Commit to the strongest surviving path — or explicitly decline to commit.
 The final decision must include:
 
 - selected path;
-- why it survived;
+- the explicit full-baseline reference;
+- why the selected path survived against the relevant baseline and challengers;
 - what was merged, parked, removed, or blocked;
 - key evidence;
+- expected-valid-outcome / whole-loop-cost basis when material;
 - residual uncertainty;
 - reversal conditions;
-- the next action or next evidence-gathering test.
+- the next action or next evidence-gathering test;
+- if the decision maker intentionally chooses a different action from the analytical result, record that choice separately without relabeling the analytical winner.
 
 `PARK` and `BLOCKED` are valid results. `1ofN` does not force false certainty.
 
@@ -225,6 +268,7 @@ If a material gap remains unresolved after the necessary backloops, return `BLOC
 Stop when:
 
 - the option space has been sufficiently scanned;
+- one explicit `FULL_BASELINE` reference has been constructed or proven from an existing candidate;
 - no material candidate has disappeared silently;
 - contrary evidence has been tested;
 - verdicts are stable;
@@ -240,7 +284,7 @@ Beyond this point, more analysis is more likely to become decision avoidance tha
 A strong run lets a reviewer answer five questions:
 
 1. What is the real decision?
-2. Which credible alternatives were considered?
+2. Which credible alternatives were considered, and what explicit full baseline were they compared against?
 3. Why did every rejected option leave the active set?
 4. What evidence could reverse the answer?
 5. What happens next?

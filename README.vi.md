@@ -33,6 +33,16 @@ Không cần dùng cho lựa chọn nhỏ, hiển nhiên, ít tốn kém hoặc 
 4. **DISTILL** — gán trạng thái rõ ràng cho mọi candidate: `KEEP | MERGE | PARK | REMOVE | BLOCKED`.
 5. **DECIDE** — chốt đường đi mạnh nhất còn đứng vững, hoặc nói rõ vì sao chưa nên commit.
 
+## Guard FULL_BASELINE
+
+Với một material run, `EXPAND` không được mặc định các option đang nhìn thấy đã chứa một đường đi đầy đủ. 1ofN phải có một **FULL_BASELINE** rõ ràng trước khi bắt đầu thu hẹp.
+
+Phương án current/incumbent không tự động là full. Nếu nó thật sự bao phủ toàn bộ decision frame, có thể gắn chính nó làm baseline sau khi kiểm tra độ đầy đủ. `FULL_BASELINE` nghĩa là đủ đầy cho material scope, **không phải maximal complexity**.
+
+Một challenger làm mất material force của baseline chỉ nên thay thế khi so sánh chứng minh được **material net advantage** mà không tạo **material regression**. Baseline vẫn phải bị challenge; nó là reference chứ không phải winner bắt buộc.
+
+Xem canonical deep-dive tại [docs/REPLACEMENT_DECISIONS.md](docs/REPLACEMENT_DECISIONS.md).
+
 ## Core ổn định, phương pháp sống
 
 `1ofN` được thiết kế để người dùng vẫn nhận ra cùng một phương pháp ngay cả khi năng lực thực thi mạnh lên rất nhiều.
@@ -108,6 +118,8 @@ Khi một quyết định đã tạo ra kết quả thực tế có thể quan s
 
 Đây là eval tùy chọn, không phải stage thứ sáu, không dùng kết quả sau này để viết lại quyết định ban đầu, và không thay đổi phương pháp năm stage.
 
+Regression case cho failure “toàn bộ option đầu vào đều partial” nằm tại [evals/full-baseline-regression.md](evals/full-baseline-regression.md).
+
 ## Ngôn ngữ và đồng bộ
 
 English là **canonical language**. Tiếng Việt là localization hạng nhất đầu tiên.
@@ -128,4 +140,4 @@ Người dùng không cần biết DIAMOND OS hay BBR để sử dụng 1ofN. Li
 
 ## Trạng thái
 
-`v0.1.2 public release`
+`v0.1.3 public release`

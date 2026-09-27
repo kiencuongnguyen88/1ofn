@@ -34,6 +34,10 @@ Rewrite the question as the real decision.
 ### 2. EXPAND
 Add missing alternatives, hybrids, sequencing options, “test first,” or “do nothing for now” when genuinely relevant.
 
+For every material run, create one explicit `FULL_BASELINE`: the complete-enough route for the current frame. Do not assume the current option is already full. If an existing option really covers the whole frame, mark it as the baseline after checking rather than creating a duplicate.
+
+`FULL_BASELINE` means complete enough for the material scope, not maximal complexity.
+
 ### 3. CHALLENGE
 For every candidate, identify:
 
@@ -41,7 +45,8 @@ For every candidate, identify:
 - contrary evidence;
 - strongest assumption;
 - failure mode;
-- simpler alternative.
+- simpler alternative;
+- if it challenges the full baseline, what material net advantage it creates and what material regression it risks.
 
 ### 4. DISTILL
 Assign every candidate:
