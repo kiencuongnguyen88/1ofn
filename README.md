@@ -2,7 +2,9 @@
 
 [English](README.md) | [Tiếng Việt](README.vi.md)
 
-**When several options all make sense.**
+**When several options all make sense. Decide what deserves to survive.**
+
+Generative AI made producing plausible options cheap. `1ofN` starts where generation stops: when several alternatives can all look reasonable and the hard part is deciding what deserves commitment without silently losing material value.
 
 `1ofN` means **one among N**: you have multiple plausible options, but you still need to determine **what deserves to survive, what should merge, what should wait, what can be removed, and whether the evidence is strong enough to decide at all**.
 
@@ -108,6 +110,7 @@ Vietnamese entry points:
 - [Choose the right first release surface](examples/01-release-surface.md)
 - [Choose how to learn a new technical skill](examples/02-learning-path.md)
 - [Choose the next direction for a small product](examples/03-product-direction.md)
+- [Choose one primary message for a public launch](examples/04-communication-message.md)
 
 ## Decision packet
 

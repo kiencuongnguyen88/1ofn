@@ -2,7 +2,9 @@
 
 [English](README.md) | [Tiếng Việt](README.vi.md)
 
-**Khi nhiều phương án đều có lý.**
+**Khi nhiều phương án đều có lý. Hãy tìm cái thật sự đáng giữ.**
+
+AI tạo thêm phương án ngày càng rẻ. `1ofN` bắt đầu ở chỗ việc sinh thêm phương án kết thúc: khi nhiều lựa chọn đều có vẻ hợp lý và phần khó là xác định cái gì đáng để cam kết mà không âm thầm làm mất giá trị quan trọng.
 
 `1ofN` đọc đơn giản là **“1 trong N”**: bạn có nhiều lựa chọn đều hợp lý, nhưng vẫn cần biết **cái gì thực sự đáng giữ, cái gì nên nhập lại, cái gì nên để sau, cái gì có thể bỏ, và liệu bằng chứng đã đủ để quyết định hay chưa**.
 
@@ -111,6 +113,7 @@ Các case canonical hiện giữ bằng tiếng Anh:
 - [Chọn bề mặt phát hành đầu tiên](examples/01-release-surface.md)
 - [Chọn cách học một kỹ năng mới](examples/02-learning-path.md)
 - [Chọn hướng tiếp theo cho một sản phẩm nhỏ](examples/03-product-direction.md)
+- [Chọn một thông điệp chính cho lần truyền thông ra công chúng](examples/04-communication-message.md)
 
 ## Theo dõi kết quả sau quyết định
 
