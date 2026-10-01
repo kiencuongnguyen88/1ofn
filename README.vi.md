@@ -8,6 +8,8 @@ AI tạo thêm phương án ngày càng rẻ. `1ofN` bắt đầu ở chỗ vi�
 
 `1ofN` đọc đơn giản là **“1 trong N”**: bạn có nhiều lựa chọn đều hợp lý, nhưng vẫn cần biết **cái gì thực sự đáng giữ, cái gì nên nhập lại, cái gì nên để sau, cái gì có thể bỏ, và liệu bằng chứng đã đủ để quyết định hay chưa**.
 
+**Lần đầu đọc 1ofN?** Sau README này, hãy cho biết tại [Reality check #1](https://github.com/kiencuongnguyen88/1ofn/issues/1) bạn hiểu 1ofN là gì, sẽ dùng nó ở đâu, và chỗ nào vẫn còn khó hiểu. Hiểu nhầm cũng là bằng chứng hữu ích.
+
 Chỉ cần hiểu tên một lần. Từ đó, `1ofN` vừa là tên của bài toán vừa là tên của phương pháp xử lý bài toán đó.
 
 > N phương án hợp lý → thử thách từng phương án → thu hẹp mà không làm mất giá trị quan trọng → đưa ra quyết định có lý do.

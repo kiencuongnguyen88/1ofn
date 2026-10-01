@@ -8,6 +8,8 @@ Generative AI made producing plausible options cheap. `1ofN` starts where genera
 
 `1ofN` means **one among N**: you have multiple plausible options, but you still need to determine **what deserves to survive, what should merge, what should wait, what can be removed, and whether the evidence is strong enough to decide at all**.
 
+**First time here?** After reading this README, tell us in [Reality check #1](https://github.com/kiencuongnguyen88/1ofn/issues/1) what you think 1ofN is, where you would use it, and what still feels unclear. Misunderstandings are useful evidence.
+
 You only need to understand the name once. After that, `1ofN` is both the name of the problem and the method for resolving it.
 
 > N plausible options → challenge them → reduce the field without losing material value → make a reasoned decision.
