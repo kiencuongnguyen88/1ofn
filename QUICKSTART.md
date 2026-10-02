@@ -26,6 +26,8 @@ Evidence / context:
 
 It is fine if the option list is incomplete. EXPAND exists to find what is missing.
 
+**Input boundary:** 1ofN can only reason from the decision, context, evidence, and option space available to the run. If the original question is incomplete, too narrow, or framed at the wrong level, the analysis may still be internally reasonable while missing the problem you actually meant to solve. Use the result as decision support; the final judgment remains yours.
+
 ## Run five stages
 
 ### 1. FRAME

@@ -26,6 +26,8 @@ Evidence / context:
 
 Không biết đủ option cũng không sao. EXPAND tồn tại để tìm phần còn thiếu.
 
+**Giới hạn đầu vào:** 1ofN chỉ có thể suy luận từ đề bài, bối cảnh, bằng chứng và trường phương án có trong lượt chạy. Nếu câu hỏi ban đầu bị thiếu, quá hẹp hoặc đặt sai tầng, phân tích vẫn có thể hợp lý trong phạm vi đó nhưng chưa chắc trả lời đúng vấn đề bạn thực sự cần giải. Hãy dùng kết quả như dữ liệu hỗ trợ quyết định; quyết định cuối cùng vẫn thuộc về bạn.
+
 ## Chạy năm stage
 
 ### 1. FRAME
